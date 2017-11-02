@@ -1,0 +1,14 @@
+resolver: lts-7.24
+allow-newer: true
+packages:
+  - .
+  - location:
+      git: https://github.com/agrafix/elm-compiler.git
+      commit: c643b1705538221c1f66ab4dfd3dafe4c0766541
+    extra-dep: true
+  - location:
+      git: https://github.com/elm-lang/elm-package.git
+      commit: 72c69fcdc5b21cb9035f081dbbc79db4401fe817
+    extra-dep: true
+extra-deps:
+  - aeson-pretty-0.7.2
